@@ -82,3 +82,14 @@ This repo includes automated checks (`.github/workflows/classroom.yml`) that ver
 - no virtual environment was committed
 
 These checks cover the mechanical parts of the assignment. Your README explanations and homework answers are graded separately by your instructor.
+
+## HOMEWORK ANSWERS 
+
+1. A Project is the entire website and its global configuration (like database connections, core settings, and root URL routing). 
+WHILE  An app is a specific, self-contained sub-module or feature within that project (like a user authentication system, a blog, or a task manager).
+
+2. python manage.py startapp <the_app_name>
+
+3. We register an app in INSTALLED_APPS to officially tell the Django project that the app exists. This allows Django to track its database migrations, recognize its models, discover its templates and static files, and include it in the Django admin interface. If it's not registered, Django will completely ignore it.
+
+4. It allows for reverse URL resolution. Instead of hardcoding exact paths (like <a href="/contact-us/">), you can reference the URL dynamically by its given name (like {% url 'contact' %})
